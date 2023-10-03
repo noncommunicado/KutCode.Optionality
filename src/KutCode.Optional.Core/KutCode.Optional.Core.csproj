@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latestmajor</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>0.0.1</Version>
+        <Title>Nullability handle solutions</Title>
+        <Description>Provides solution for handle nullability returns e.t.c.</Description>
+        <Copyright>Kutumov Nikita</Copyright>
+        <RepositoryUrl>https://github.com/hamaronooo/H.Optional</RepositoryUrl>
+        <RepositoryType>GIT</RepositoryType>
+    </PropertyGroup>
+
+</Project>
