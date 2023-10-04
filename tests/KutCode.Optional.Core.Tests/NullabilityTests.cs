@@ -6,7 +6,7 @@ public class NullabilityTests
 	[Test]
 	public void Null_Option_Instance_ToString_NotNull_Result__ForReferenceType()
 	{
-		var value = Optional<ReferenceTypeForTests>.From(null);
+		var value = Optional.From<ReferenceTypeForTests>(null);
 		Assert.IsNotNull(value.ToString());
 		Assert.IsNotEmpty(value.ToString());
 	}
@@ -14,7 +14,7 @@ public class NullabilityTests
 	[Test]
 	public void Null_Option_Instance_ToString_NotNull_Result__ForValueType()
 	{
-		var value = OptionalValue<ValueTypeForTests>.From(null);
+		var value = Optional.From<ValueTypeForTests>(null);
 		Assert.IsNotNull(value.ToString());
 		Assert.IsNotEmpty(value.ToString());
 	}
