@@ -1,4 +1,7 @@
-﻿namespace KutCode.Optional.Core;
+﻿using System.Text.Json.Serialization;
+using KutCode.Optional.Core.Json;
+
+namespace KutCode.Optional.Core;
 
 /// <summary>
 /// Object, that define optional value state
@@ -6,7 +9,9 @@
 /// of reference types 
 /// </summary>
 /// <typeparam name="TValue">Type of value (reference type)</typeparam>
-public readonly struct Optional<TValue> where TValue : class
+[JsonConverter(typeof(OptionalJsonConverterFactory))]
+public readonly struct Optional<TValue>
+	where TValue : class
 {
 	private const string EmptyToStringInvocationResult = "null";
 	private readonly TValue? _value;

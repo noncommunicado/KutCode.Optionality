@@ -1,9 +1,30 @@
 
 # <img src="./icon/icon.png" style="width: 30px" /> KutCode.Optional
 
-NuGet package which allow you to easely handle null values in C#
+.NET library that allows you to easily handle null values in C#.
 
-## Basic usage
+## ⚙️ Features
+* Handle `nullable` value and reference types
+* Easy *"from value"* creation or static `.None` stub
+* Built-in Json support `System.Text.Json` as Serialization and Deserialization
+
+## 📜 Install
+KutCode.Optional is designed to work with `net7.0` and higher.
+
+Install KutCode.Optional using NuGet Package Manager:
+```powershell
+Install-Package KutCode.Optional.Core
+```
+
+Or via the .NET CLI:
+```shell
+dotnet add package KutCode.Optional.Core
+```
+
+
+All versions can be found [here](https://www.nuget.org/packages/KutCode.Optional.Core/).
+
+## ⌨️ Basic usage
 * Wrap all types for easy nullabillity checks
 ```csharp
 public Optional<Person> GetPerson() 
@@ -46,3 +67,11 @@ public void HandlePerson(Person person)
     // some actions
 }
 ```
+
+## 📦 JSON
+
+KutCode.Optional allows you to use `Optional<T>` in JSON-models.
+
+
+## ℹ️ Additional info
+### 🗨️ [Telegram](https://t.me/hamaronooo/)

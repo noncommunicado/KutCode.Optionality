@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutCode.Optional.Core", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutCode.Optional.Core.Tests", "tests\KutCode.Optional.Core.Tests\KutCode.Optional.Core.Tests.csproj", "{C53281D5-7FAD-4F93-9032-E473D8BF796A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutCode.Optional.Api.SystemTextJson.ShowCase", "tests\KutCode.Optional.Api.SystemTextJson.ShowCase\KutCode.Optional.Api.SystemTextJson.ShowCase.csproj", "{5B58B583-799E-4145-89EF-12314BBD118A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{EBE39C17-688A-4CDC-8F3E-1ABBD62436EF} = {B74D9F87-633A-444D-B8AF-6EDACF2F25BE}
 		{C53281D5-7FAD-4F93-9032-E473D8BF796A} = {2EB37B0D-AB30-4253-804D-8E1F02F1A580}
+		{5B58B583-799E-4145-89EF-12314BBD118A} = {2EB37B0D-AB30-4253-804D-8E1F02F1A580}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EBE39C17-688A-4CDC-8F3E-1ABBD62436EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -26,5 +29,9 @@ Global
 		{C53281D5-7FAD-4F93-9032-E473D8BF796A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C53281D5-7FAD-4F93-9032-E473D8BF796A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C53281D5-7FAD-4F93-9032-E473D8BF796A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B58B583-799E-4145-89EF-12314BBD118A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B58B583-799E-4145-89EF-12314BBD118A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B58B583-799E-4145-89EF-12314BBD118A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B58B583-799E-4145-89EF-12314BBD118A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
