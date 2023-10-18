@@ -45,6 +45,6 @@ public static class Optional
 	/// </summary>
 	/// <param name="fallback">Value, which will be returned, if Optional instance value is null</param>
 	/// <returns>Optional value, if it's null, fallback value</returns>
-	public static TValue Fallback<TValue>(this OptionalValue<TValue> value, [NotNull] TValue fallback) where TValue : struct
-		=> (TValue)(value.HasValue ? value.Value! : fallback);
+	public static TValue Fallback<TValue>(this OptionalValue<TValue> value, TValue fallback) where TValue : struct
+		=> value.HasValue ? value.Value : fallback;
 }

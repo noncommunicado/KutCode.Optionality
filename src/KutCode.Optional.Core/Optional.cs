@@ -29,7 +29,7 @@ public readonly struct Optional<TValue>
 	/// <summary>
 	/// Is internal init-only set value of <see cref="TValue"/> type is not null
 	/// </summary>
-	public bool HasValue => _value is not null;
+	public bool HasValue => _value != null;
 
 	/// <summary>
 	/// Get value if it's existed.<br/>
@@ -37,12 +37,7 @@ public readonly struct Optional<TValue>
 	/// Highly recommended to use <see cref="HasValue"/> first.
 	/// </summary>
 	/// <exception cref="NullReferenceException">Throws if value wasn't set</exception>
-	public TValue Value {
-		get {
-			if (_value is null) throw new NullReferenceException("Value is null");
-			return _value;
-		}
-	}
+	public TValue? Value => _value;
 
 	/// <summary>
 	/// Produce <see cref="ToString"/> call result of <see cref="TValue"/> object.<br/>
