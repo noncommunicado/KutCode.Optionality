@@ -1,7 +1,5 @@
-using KutCode.Optional.Api.SystemTextJson.ShowCase;
 using KutCode.Optional.Api.SystemTextJson.ShowCase.Models;
-using KutCode.Optional.Core;
-using Microsoft.AspNetCore.Http.HttpResults;
+using KutCode.Optionality;
 
 var builder = WebApplication.CreateBuilder(args);
 

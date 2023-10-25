@@ -1,5 +1,4 @@
-﻿
-using KutCode.Optional.Core;
+﻿using KutCode.Optionality;
 
 namespace KutCode.Optional.Api.SystemTextJson.ShowCase.Models;
 
