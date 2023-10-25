@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\KutCode.Optional.Core\KutCode.Optional.Core.csproj" />
+      <ProjectReference Include="..\..\src\KutCode.Optionality\KutCode.Optionality.csproj" />
     </ItemGroup>
 
 

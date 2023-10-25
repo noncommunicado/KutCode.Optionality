@@ -1,35 +1,30 @@
-﻿using System.Text.Json.Serialization;
-using KutCode.Optional.Core.Json;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.Json.Serialization;
+using KutCode.Optionality.Json;
 
-namespace KutCode.Optional.Core;
+namespace KutCode.Optionality;
 
 /// <summary>
 /// Object, that define optional value state
 /// and provides features for easy-handling nullability
-/// of reference types 
+/// of value types
 /// </summary>
-/// <typeparam name="TValue">Type of value (reference type)</typeparam>
+/// <typeparam name="TValue">Type of value (value type)</typeparam>
 [JsonConverter(typeof(OptionalJsonConverterFactory))]
-public readonly struct Optional<TValue>
-	where TValue : class
+public readonly struct OptionalValue<TValue> where TValue : struct
 {
 	private const string EmptyToStringInvocationResult = "null";
 	private readonly TValue? _value;
-	public Optional(TValue? value) => _value = value;
-
-	public static implicit operator TValue?(Optional<TValue> optionalValue) => optionalValue._value;
-	public static implicit operator Optional<TValue>(TValue? value) => new(value);
+	public OptionalValue(TValue? value) => _value = value;
 	
-	/// <summary>
-	/// Produce default 
-	/// </summary>
-	public static Optional<TValue> None => _none;
-	private static Optional<TValue> _none = new(null);
+	public static implicit operator TValue?(OptionalValue<TValue> optionalValue) => optionalValue._value;
+	public static implicit operator OptionalValue<TValue>(TValue? value) => new(value);
+	public static OptionalValue<TValue> None => new(null);
 	
 	/// <summary>
 	/// Is internal init-only set value of <see cref="TValue"/> type is not null
 	/// </summary>
-	public bool HasValue => _value != null;
+	public bool HasValue => _value.HasValue;
 
 	/// <summary>
 	/// Get value if it's existed.<br/>
@@ -37,7 +32,13 @@ public readonly struct Optional<TValue>
 	/// Highly recommended to use <see cref="HasValue"/> first.
 	/// </summary>
 	/// <exception cref="NullReferenceException">Throws if value wasn't set</exception>
-	public TValue? Value => _value;
+	public TValue Value => _value!.Value;
+	
+	/// <summary>
+	/// Returns null if internal object actually hasn't value<br/>
+	/// No exceptions will be thrown
+	/// </summary>
+	public TValue? NullIfEmpty => _value.HasValue ? _value.Value : null;
 
 	/// <summary>
 	/// Produce <see cref="ToString"/> call result of <see cref="TValue"/> object.<br/>

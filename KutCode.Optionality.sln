@@ -4,9 +4,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B74D9F87-633
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2EB37B0D-AB30-4253-804D-8E1F02F1A580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutCode.Optional.Core", "src\KutCode.Optional.Core\KutCode.Optional.Core.csproj", "{EBE39C17-688A-4CDC-8F3E-1ABBD62436EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutCode.Optionality", "src\KutCode.Optionality\KutCode.Optionality.csproj", "{EBE39C17-688A-4CDC-8F3E-1ABBD62436EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutCode.Optional.Core.Tests", "tests\KutCode.Optional.Core.Tests\KutCode.Optional.Core.Tests.csproj", "{C53281D5-7FAD-4F93-9032-E473D8BF796A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutCode.Optionality.Tests", "tests\KutCode.Optionality.Tests\KutCode.Optionality.Tests.csproj", "{C53281D5-7FAD-4F93-9032-E473D8BF796A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutCode.Optionality.Api.SystemTextJson.ShowCase", "tests\KutCode.Optionality.Api.SystemTextJson.ShowCase\KutCode.Optionality.Api.SystemTextJson.ShowCase.csproj", "{5B58B583-799E-4145-89EF-12314BBD118A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutCode.Optional.Api.SystemTextJson.ShowCase", "tests\KutCode.Optional.Api.SystemTextJson.ShowCase\KutCode.Optional.Api.SystemTextJson.ShowCase.csproj", "{5B58B583-799E-4145-89EF-12314BBD118A}"
 EndProject

@@ -1,6 +1,6 @@
-﻿namespace KutCode.Optional.Core.Tests.Models;
+﻿namespace KutCode.Optionality.Tests.Models;
 
-public sealed class ReferenceTypeForTests
+public struct ValueTypeForTests
 {
 	public const string Json = """{"FirstName":"John","LastName":"Doe","Age":21}""";
 	
@@ -8,7 +8,7 @@ public sealed class ReferenceTypeForTests
 	public string LastName { get; set; }
 	public int Age { get; set; }
 
-	public static ReferenceTypeForTests GetJohnDoe() => new()
+	public static ValueTypeForTests GetJohnDoe() => new()
 	{
 		FirstName = "John",
 		LastName = "Doe",

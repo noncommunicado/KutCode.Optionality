@@ -6,14 +6,14 @@
         <Nullable>enable</Nullable>
         <LangVersion>latestmajor</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.3</Version>
+        <Version>0.0.4</Version>
         <Title>Nullability handle solutions</Title>
         <Description>Provides solution for handle nullability returns e.t.c.</Description>
         <Copyright>Kutumov Nikita</Copyright>
         <RepositoryUrl>https://github.com/hamaronooo/KutCode.Optional</RepositoryUrl>
         <RepositoryType>GIT</RepositoryType>
-        <AssemblyVersion>0.0.3</AssemblyVersion>
-        <FileVersion>0.0.3</FileVersion>
+        <AssemblyVersion>0.0.4</AssemblyVersion>
+        <FileVersion>0.0.4</FileVersion>
         <NeutralLanguage>en</NeutralLanguage>
         <PackageIcon>icon.png</PackageIcon>
     </PropertyGroup>
