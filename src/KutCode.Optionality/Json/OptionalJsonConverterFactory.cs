@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace KutCode.Optional.Core.Json;
+namespace KutCode.Optionality.Json;
 
 /// <summary>
 /// Json converter factory for map json values into Optional

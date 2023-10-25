@@ -1,7 +1,7 @@
 ﻿
-using KutCode.Optional.Core;
+using KutCode.Optionality;
 
-namespace KutCode.Optional.Api.SystemTextJson.ShowCase.Models;
+namespace KutCode.Optionality.Api.SystemTextJson.ShowCase.Models;
 
 public class RequestResponseModel
 {

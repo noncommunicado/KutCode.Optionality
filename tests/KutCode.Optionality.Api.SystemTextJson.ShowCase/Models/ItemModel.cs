@@ -1,5 +1,5 @@
 ﻿
-namespace KutCode.Optional.Api.SystemTextJson.ShowCase.Models;
+namespace KutCode.Optionality.Api.SystemTextJson.ShowCase.Models;
 
 public sealed class ItemModel
 {

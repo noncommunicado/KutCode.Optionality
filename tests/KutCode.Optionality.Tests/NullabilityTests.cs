@@ -1,4 +1,4 @@
-﻿namespace KutCode.Optional.Core.Tests;
+﻿namespace KutCode.Optionality.Tests;
 
 [TestFixture]
 public class NullabilityTests

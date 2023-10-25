@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace KutCode.Optional.Core.Tests.Json;
+namespace KutCode.Optionality.Tests.Json;
 
 /// <summary>
 /// <see cref="Optional{TValue}"/> convert Object to JSON string tests
