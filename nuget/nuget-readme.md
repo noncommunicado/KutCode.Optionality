@@ -8,18 +8,18 @@
 
 ## 📜 Install
 
-KutCode.Optional is designed to work with `net7.0` and higher.
+KutCode.Optionality is designed to work with `net7.0` and higher.
 
-Install KutCode.Optional using NuGet Package Manager:
+Install KutCode.Optionality using NuGet Package Manager:
 
 ```powershell
-Install-Package KutCode.Optional.Core
+Install-Package KutCode.Optionality
 ```
 
 Or via the .NET CLI:
 
 ```shell
-dotnet add package KutCode.Optional.Core
+dotnet add package KutCode.Optionality
 ```
 
 All versions can be found [here](https://www.nuget.org/packages/KutCode.Optional.Core/).
@@ -74,7 +74,7 @@ public void HandlePerson(Person person)
 
 ## 📦 JSON
 
-KutCode.Optional allows you to use `Optional<T>` in JSON-models.
+KutCode.Optionality allows you to use `Optional<T>` in JSON-models.
 
 ## ℹ️ Additional info
 

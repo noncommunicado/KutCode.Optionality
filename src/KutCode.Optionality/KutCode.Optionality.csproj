@@ -10,12 +10,15 @@
         <Title>Nullability handle solutions</Title>
         <Description>Provides solution for handle nullability returns e.t.c.</Description>
         <Copyright>Kutumov Nikita</Copyright>
-        <RepositoryUrl>https://github.com/hamaronooo/KutCode.Optional</RepositoryUrl>
+        <RepositoryUrl>https://github.com/hamaronooo/KutCode.Optionality</RepositoryUrl>
         <RepositoryType>GIT</RepositoryType>
         <AssemblyVersion>0.0.4</AssemblyVersion>
         <FileVersion>0.0.4</FileVersion>
         <NeutralLanguage>en</NeutralLanguage>
         <PackageIcon>icon.png</PackageIcon>
+        <PackageProjectUrl>https://github.com/hamaronooo/KutCode.Optionality</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/hamaronooo/KutCode.Optionality/blob/main/LICENSE</PackageLicenseUrl>
+        <PackageTags>Optional,KutCode</PackageTags>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
