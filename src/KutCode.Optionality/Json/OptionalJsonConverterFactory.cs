@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 namespace KutCode.Optionality.Json;
 
 /// <summary>
-/// Json converter factory for map json values into Optional
+/// JSON converter factory that selects the appropriate converter for Optional and OptionalValue objects
 /// </summary>
 public sealed class OptionalJsonConverterFactory : JsonConverterFactory
 {
@@ -16,7 +16,7 @@ public sealed class OptionalJsonConverterFactory : JsonConverterFactory
 	public override JsonConverter? CreateConverter(Type typeToConvert, JsonSerializerOptions options)
 	{
 		var genericType = typeToConvert.GenericTypeArguments[0];
-		bool isValueType = genericType.IsSubclassOf(typeof(ValueType));
+		var isValueType = genericType.IsValueType;
 		var gType = isValueType ? typeof(OptionalValueJsonConverter<>) : typeof(OptionalJsonConverter<>);
 		var resultType = gType.MakeGenericType(genericType);
 		return (JsonConverter?) Activator.CreateInstance(resultType);

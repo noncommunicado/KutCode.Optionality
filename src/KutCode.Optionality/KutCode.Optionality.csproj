@@ -1,37 +1,62 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFrameworks>net7.0;net8.0;net9.0</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>latestmajor</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.4</Version>
-        <Title>Nullability handle solutions</Title>
-        <Description>Provides solution for handle nullability returns e.t.c.</Description>
+        <Version>1.0.0</Version>
+        <Title>KutCode.Optionality</Title>
+        <Authors>Kutumov Nikita</Authors>
+        <Owners>hamaronooo</Owners>
+        <Description>A type-safe way to handle nullable values in C#. Provides Optional&lt;T&gt; and OptionalValue&lt;T&gt; types with built-in JSON support and fluent API for nullable handling.</Description>
+        <Summary>Type-safe nullability handling solution for C# applications</Summary>
         <Copyright>Kutumov Nikita</Copyright>
         <RepositoryUrl>https://github.com/hamaronooo/KutCode.Optionality</RepositoryUrl>
-        <RepositoryType>GIT</RepositoryType>
-        <AssemblyVersion>0.0.4</AssemblyVersion>
-        <FileVersion>0.0.4</FileVersion>
+        <RepositoryType>git</RepositoryType>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
         <NeutralLanguage>en</NeutralLanguage>
         <PackageIcon>icon.png</PackageIcon>
         <PackageProjectUrl>https://github.com/hamaronooo/KutCode.Optionality</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/hamaronooo/KutCode.Optionality/blob/main/LICENSE</PackageLicenseUrl>
-        <PackageTags>Optional,KutCode</PackageTags>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>optional;nullability;monad;functional;dotnet;csharp</PackageTags>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <MinVerSkip Condition="'$(Configuration)' == 'Debug'">true</MinVerSkip>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
       <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
       <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-      <DocumentationFile>bin\Release\KutCode.Optional.Core.xml</DocumentationFile>
+      <DocumentationFile>bin\Release\KutCode.Optionality.xml</DocumentationFile>
+      <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
     </PropertyGroup>
 
     <ItemGroup>
-      <None Update="icon.png">
-        <Pack>True</Pack>
-        <PackagePath></PackagePath>
-      </None>
+        <None Include="../../icon/icon.png" Pack="true" PackagePath="">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="../../README.md" Pack="true" PackagePath="">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="../../LICENSE" Pack="true" PackagePath="">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <!-- Не включаем в пакет файлы, необходимые только для разработки -->
+    <ItemGroup>
+        <None Remove="obj\**" />
+        <None Remove="bin\**" />
+        <None Remove="*.user" />
+        <None Remove="*.suo" />
+        <Compile Remove="obj\**" />
     </ItemGroup>
 
 </Project>
