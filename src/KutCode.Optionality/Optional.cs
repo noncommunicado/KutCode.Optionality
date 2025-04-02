@@ -43,7 +43,7 @@ public readonly struct Optional<TValue>
 	/// May return null if value wasn't set.<br/>
 	/// It's highly recommended to check <see cref="HasValue"/> first.
 	/// </summary>
-	public TValue? Value => _value;
+	public TValue Value => _value!;
 
 	/// <summary>
 	/// Returns the result of calling <see cref="ToString"/> on the <see cref="TValue"/> object.<br/>

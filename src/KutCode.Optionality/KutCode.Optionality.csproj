@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <LangVersion>latestmajor</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <Title>KutCode.Optionality</Title>
         <Authors>Kutumov Nikita</Authors>
         <Owners>hamaronooo</Owners>
@@ -15,8 +15,8 @@
         <Copyright>Kutumov Nikita</Copyright>
         <RepositoryUrl>https://github.com/hamaronooo/KutCode.Optionality</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <AssemblyVersion>1.0.0</AssemblyVersion>
-        <FileVersion>1.0.0</FileVersion>
+        <AssemblyVersion>1.0.1</AssemblyVersion>
+        <FileVersion>1.0.1</FileVersion>
         <NeutralLanguage>en</NeutralLanguage>
         <PackageIcon>icon.png</PackageIcon>
         <PackageProjectUrl>https://github.com/hamaronooo/KutCode.Optionality</PackageProjectUrl>
